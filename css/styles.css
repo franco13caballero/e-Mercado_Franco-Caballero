@@ -150,7 +150,7 @@ a.custom-card:hover {
     box-shadow: whitesmoke;
   }
   
-  .xd_xd {
+   .xd_xd{
     text-align: right;
     padding-top: 15%;
   }
@@ -172,3 +172,59 @@ a.custom-card:hover {
   }
   
   .btn_n:hover {opacity: 2}
+
+  .checked {
+    color: orange;
+  }
+
+  .centrar {
+    justify-content: center
+  }
+
+  .size_image {
+    width: 20%;
+  }
+  .row_image {
+    display: flex;
+  }
+
+  .centrar_carrusel {
+    text-align: start;
+  }
+
+.iconos_productos {
+  border: 0.5px solid #ddd;
+  border-radius: 3px;
+  padding: 5px;
+  width: 75px;
+  height: 75px;
+}
+
+.fondo_test {
+
+  background-color: beige;
+  border-radius: 15px;
+}
+
+.right {
+  float: right;
+  width: 300px;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+
+.Row {
+  display: table;
+  width: 100%; /*Optional*/
+  table-layout: fixed; /*Optional*/
+  border-spacing: 10px; /*Optional*/
+}
+.Column {
+  display: table-cell;
+}

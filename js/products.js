@@ -48,7 +48,7 @@ function showProductsList(array){
         ((maxCost == undefined) || (maxCost != undefined && parseInt(product.cost) <= maxCost))) {
 
         htmlContentToAppend += `
-        <div class="list-group-item list-group-item-action">
+        <a href="product-info.html" class="list-group-item-action"><div class="list-group-item list-group-item-action">
             <div class="row">
                 <div class="col-3">
                     <img src="` + product.imgSrc + `" alt="` + product.description + `" class="img-thumbnail">
@@ -64,7 +64,7 @@ function showProductsList(array){
                 
                 <h4 class="xd_xd">`+ product.cost +` ` + product.currency + `</h4>
             </div>
-        </div>
+        </div></a>
         `
 
         document.getElementById("product_list_container").innerHTML = htmlContentToAppend;
@@ -158,3 +158,15 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     });
 });
+
+function logout() {
+    if(window.sessionStorage != null) {
+        sessionStorage.clear();
+        window.location.href='login.html'
+} }
+
+function verificacion_usuario() {
+    if (sessionStorage.length == 0 ) {location.replace('login.html')}
+    };
+    
+    verificacion_usuario()
